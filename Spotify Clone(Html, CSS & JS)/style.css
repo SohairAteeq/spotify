@@ -1,0 +1,729 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body{
+    background-color: black;
+    height: auto;
+}
+.maindiv{
+    display: flex;
+    height: 100vh;
+    width: auto;
+}
+.sidediv{
+    background-color: black;
+    width: 25%;
+    height: 39.5rem;
+}
+.bigdiv{
+    background-color: black;
+    width: 75%;
+    height: 100%;
+}
+.smalldiv{
+    height: 1rem;
+    background-color: black;
+    width: 95%;
+    margin: 0 auto;
+    border-radius: 0.55em;
+    background-color: #121212;
+}
+.firstsmalldiv{
+    margin: 0.5em auto;
+    height: 10rem;
+}
+#spotify{
+    height: 1.6rem;
+    opacity: 1;
+}
+.firstsmalldivli{
+    opacity: 0.7;
+    list-style: none;
+    margin: 0.8rem;
+    margin-bottom: 1rem;
+}
+.firstsmalldivli:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.firstsmalldivli svg{
+    fill: white;
+    height: 1.5rem;
+}
+.firstsmalldiv ul{
+    padding: 1rem;
+}
+.firstsmalldivli span{
+    margin: 2rem;
+    font-size: 1rem;
+    position: relative;
+    bottom: 0.4rem;
+    font-weight: bold;
+}
+.secondsmalldiv{
+    height: 28.5rem;
+}
+.svgdiv{
+    display: flex;
+    justify-content: space-between;
+}
+.librarydivs svg{
+    fill: white;
+    height: 1.5rem;
+}
+.librarydivs:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.firstlibrarydiv span{
+    position: relative;
+    top: -0.3rem;
+    margin-left: 0.5rem;
+    font-weight: bold;
+}
+.firstlibrarydiv{
+    padding: 1rem;
+    opacity: 0.7;
+}
+.secondlibrarydiv button{
+    background: black;
+    border: none;
+    margin-left: 1em;
+}
+.secondlibrarydiv{
+    padding: 1rem;
+    opacity: 0.7;
+}
+.createyourplaylist{
+    background-color: #1f1f1f;
+    padding: 1.5rem;
+    width: 80%;
+    margin: auto;
+    border-radius: 0.7rem;
+}
+.createyourplaylist p{
+    font-weight: bold;
+    margin-bottom: 0.7rem;
+    font-size: 1rem;
+}
+.createyourplaylist div{
+    font-size: 0.9rem;
+    margin-bottom: 1.2rem;
+}
+.createyourplaylist button{
+    padding: 0.6rem;
+    color: black;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 1.5rem;
+    border: none;
+}
+.songdiv{
+    background-color: #1d1d1d;
+    height: 39.05rem;
+    width: 99.5%;
+    border-radius: 0.7rem;
+    margin: 0.5rem auto 0rem 0rem;
+}
+.songtopdiv{
+    width: 100%;
+    height: 4.1rem;
+    background-color: #101010;
+    border-top-right-radius: 0.7rem;
+    border-top-left-radius: 0.7rem;
+    fill: white;
+    display: flex;
+    justify-content: space-between;
+}
+.songdivarrows svg{
+    height: 1rem;
+    opacity: 0.6;
+    margin-top: 0.25rem;
+    width: 1rem;
+}
+.songdivarrows svg:hover{
+    opacity: 1;
+}
+.arrowparrentdiv{
+    display: flex;
+    padding: 1rem;
+}
+.songdivarrows{
+    background-color: #0a0a0a;
+    width: 1.5rem;
+    text-align: center;
+    padding: 0.3rem;
+    border-radius: 50%;
+    margin-left: 0.6rem;
+    height: 1.5rem;
+    border: none;
+}
+.signup{
+    background-color: #101010;
+    border: none;
+    opacity: 0.7;
+    height: 2.8rem;
+    width: 6rem;
+    border-radius: 1.2rem;
+}
+.signup:hover{
+    opacity: 1;
+}
+.loginsignupdiv{
+    padding: 0.5rem;
+}
+.loginsignup{
+    font-size: 1rem;
+    margin-right: 0.5rem;
+    font-weight: bold;
+}
+.login{
+    color: black;
+    height: 2.7rem;
+    width: 6rem;
+    border-radius: 1.2rem;
+}
+.login:hover{
+    opacity: 0.9;
+}
+.popularartist{
+    font-size: 1.7rem;
+    font-weight: bold;
+    padding: 1.5rem;
+    padding-top: 3rem;
+}
+.album{
+    height: 14rem;
+    width: 9.9rem;
+    padding: 1rem;
+    margin-left: 0.5rem;
+    border-radius: 0.4rem;
+}
+.album:hover{
+    background-color: #2f2f2f;
+    .play-button{
+        opacity: 1;
+        margin-top: 7rem;
+    }
+}
+.albumimg{
+    height: 10rem;
+    border-radius: 0.5rem;
+}
+.albumdesc{
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0.5rem auto;
+}
+.albumauthor{
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+.play-button {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: #33ce33dd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    margin-left:7rem;
+    margin-top: 10rem;
+    opacity: 0;
+    transition: all 0.5s ease-out;
+  }
+  
+.play-button svg {
+    width: 2rem;
+    fill: black; /* White color for the triangle */
+}
+.albums{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* playbar */
+
+.playbar{
+    width: 73%;
+    height: 4rem;
+    background-color: #071409ef;
+    position: fixed;
+    top: 35.2rem;
+    right: 1.1rem;
+    border-radius: 2rem;
+    /* display: flex; */
+    justify-content: center;
+    gap: 1rem;
+    overflow-y: scroll;
+}
+.playbar1{
+    display: flex;
+    justify-content: space-around;
+    gap: 9rem;
+    height: 2.7rem;
+}
+.playbar2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.3rem;
+}
+#pause img{
+    height: 2.5rem;
+    margin-top: 0.2rem;
+    opacity: 1;
+}
+.playbuttons img{
+    height: 1.5rem;
+    margin-top: 0.6rem;
+    opacity: 0.7;
+}
+.playbuttons img:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+.seekbar{
+    height: 0.3rem;
+    width: 100%;
+    background-color: white;
+    /* position: absolute; */
+    top: 0rem;
+    opacity: 0.5;
+    border-radius: 4rem;
+    cursor: pointer;
+}
+#circle{
+    width: 1rem;
+    height: 1rem;
+    background-color: white;
+    position: relative;
+    border-radius: 50%;
+    left: 0rem;
+    cursor: pointer;
+    top: -0.6rem;
+}
+
+/* songcard */
+.songcard{
+    background-color: rgb(37, 51, 51);
+    width: 87%;
+    border-radius: 0.4rem;
+    /* border: 0.15rem solid black; */
+    margin: 0.5rem auto;
+    padding: 0.7rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    justify-content: space-between;
+    opacity: 0.7;
+    cursor: pointer;
+}
+.songcard:hover{
+    opacity: 1;
+}
+.songcard img{
+    height: 2.5rem;
+}
+.songcard div{
+    display: flex;
+    align-items: center;
+}
+.songcard div img{
+    height: 1.8rem;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb{
+background: #888; 
+border-radius: 1rem
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #555; 
+}
+
+.songcardparent{
+    height: 14rem;
+    overflow: auto;
+    margin-top: 0.5rem;
+}
+
+.parentplaybuttons{
+    display: flex;
+    gap: 1.2rem;
+}
+
+/* .description{
+    padding: 0.3rem;
+    position: absolute;
+} */
+
+.songdesc{
+    font-size: 0.75rem;
+    width: 15rem;
+    display: flex;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+}
+.songdesc img{
+    height: 2.5rem;
+}
+.volume{
+    padding: 0.79rem;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding-top: 1rem;
+}
+
+.songouterdesc {
+    overflow: hidden; /* Hide the overflow text */
+    white-space: nowrap; /* Prevent text wrapping */
+    width: 11rem; /* Adjust the width as needed */
+    position: relative;
+}
+
+.songinnerdesc {
+    display: inline-block;
+    animation: slideText 10s linear infinite; /* Add animation */
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 0.6rem;
+}
+
+@keyframes slideText {
+    0% {
+        transform: translateX(30%); /* Start from the right */
+    }
+    100% {
+        transform: translateX(-100%); /* Move to the left */
+    }
+}
+
+#currentTime{
+    /* position: absolute; */
+    left: 13.2rem;
+    top: 2.6rem;
+    font-size: 0.99rem;
+}
+
+#durationTime{
+    /* position: absolute; */
+    right: 12.5rem;
+    top: 2.55rem;
+}
+
+/* volume button */
+#volumeSlider {
+    width: 9rem;
+    background: #ddd;
+    outline: none;
+    opacity: 0.7;
+    height: 0.2rem;
+    border-radius: 7rem;
+  }
+  
+  #volumeSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 0.7rem;
+    height: 0.7rem;
+    background: white;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+
+#volumesvg{
+    height: 1.6rem;
+}
+.parentseekbar{
+    height: 0.3rem;
+    width: 31rem;
+    /* position: absolute; */
+    top: 3rem;
+}
+#cross{
+    visibility: hidden;
+    width: 2rem;
+    opacity: 0.7;
+}
+.hamburger{
+    visibility: hidden;
+}
+
+
+@media only screen and (max-width: 1160px){
+    .playbar1{
+        gap: 0rem;
+    }
+    .sidediv{
+        width: 30%;
+    }
+    .bigdiv{
+        width: 70%;
+    }
+    .playbar{
+        width: 67%;
+    }
+    .parentseekbar{
+        width: 19rem;
+    }
+    .songinnerdesc{
+        font-size: 0.9rem;
+    }
+    .songouterdesc{
+        width: 6rem;
+    }
+    .songdesc{
+        width: 11rem;
+    }
+    #volumesvg{
+        font-size: 0.9rem;
+    }
+    #volumeslider{
+        width: 7.5rem;
+    }
+    .createyourplaylist{
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    .sidediv{
+        position: fixed;
+        left: -80%;
+        z-index: 1;
+        border-radius: 0.3rem;
+        transition: all ease-in 0.3s;
+        width: 45%;
+    }
+    #cross{
+        visibility: visible;
+    }
+    #cross:hover{
+    opacity: 1;
+    }
+    #spotify{
+        display: flex;
+        justify-content: space-between;
+    }
+    .bigdiv{
+        width: 100%;
+    }
+    .playbar{
+        width: 97%;
+    }
+    .hamburger{
+        visibility: visible;
+    }
+    .createyourplaylist{
+        width: 80%;
+    }
+    .songdiv{
+        height: 98%;
+    }
+    .sidediv{   
+        height: 100%;
+    }
+    .firstsmalldiv{
+        height: 25%;
+    }
+    .secondsmalldiv{
+        height: 75%;
+    }
+}
+@media only screen and (max-width: 720px){
+    .maindiv{
+        height: 100%;
+    }
+    .songdiv{
+        height: 100%;
+    }
+    .bigdiv{
+        height: 100%;
+    }
+    .sidediv{
+        width: 70%;
+    }
+    .playbar{
+        top: 91vh;
+        left: 1.5vw;
+    }
+    .sidediv{
+        height: 100%;
+        width: 60%;
+    }
+    .secondsmalldiv{
+        height: 75%;
+    }
+    .firstsmalldiv{
+        height: 22%;
+    }
+    .playbar{
+        top: 88.3%;
+        left: 0.3rem;
+        height: 5rem;
+    }
+    #volumeSlider{
+        width: 4rem;
+
+    }
+    .songouterdesc{
+        width: 4rem;
+    }
+    .parentseekbar{
+        width:14rem;
+    }
+    .playbar2{
+        margin-top: 0.7rem;
+    }
+    .parentplaybuttons{
+        gap: 0.6rem;
+    }
+    .songdesc{
+        width: 6.5rem;
+    }
+    .playbar1{
+        margin-top: 0.1rem;
+    }
+    .loginsignupdiva{
+        padding: 0.5rem 0rem;
+    }
+    .songcardparent{
+        height: 60%;
+    }
+    .songtopdiv{
+        height: 6.1rem;
+    }
+    .login{
+        height: 3rem;
+        width: 6rem;
+        border-radius: 1.4rem;
+    }
+    .loginsignupdiv{
+        padding: 1.5rem 0;
+    }
+    .loginsignup{
+        margin-right: 0rem;
+    }
+    .arrowparrentdiv{
+        align-items: center;
+        padding: 1rem 0;
+        margin-left: 0.3rem;
+    }
+    .songdivarrows{
+        height: 2rem;
+        width: 2rem;
+    }
+    .songdivarrows svg{
+        margin-top: 0.55rem;
+    }
+    .popularartist{
+        font-size: 2.1rem;
+    }
+    .createyourplaylist{
+        height: 19%;
+    }
+    .album{
+        height: 18rem;
+        width: 15.9rem;
+        background-color: #3b3838;
+        margin: auto;
+        margin-bottom: 1rem;
+        border-radius: 1.1rem;
+    }
+    .albumimg{
+        height: 14rem;
+        margin-left: 1rem;
+    }
+    .albumdesc{
+        margin: 0.5rem 1rem;
+    }
+    .albumauthor{
+        margin-left: 1rem;
+    }
+    .album:hover{
+        .play-button{
+            margin-top: 10.5rem;
+        }
+    }
+    .play-button{
+        margin-left: 11rem;
+        margin-top: 14rem;
+    }
+    /* .songdiv{
+        height: auto;
+    } */
+
+}
+
+@media only screen and (max-width: 520px){
+    /* .sidediv{
+        height: 100%;
+        width: 80%;
+    }
+    .secondsmalldiv{
+        height: 75%;
+    }
+    .firstsmalldiv{
+        height: 22%;
+    }
+    .playbar{
+        top: 89.3vh;
+        left: 0.3rem;
+        height: 5rem;
+    }
+    #volumeSlider{
+        width: 4rem;
+
+    }
+    .songouterdesc{
+        width: 4rem;
+    }
+    .parentseekbar{
+        width:14rem;
+    }
+    .playbar2{
+        margin-top: 0.7rem;
+    }
+    .parentplaybuttons{
+        gap: 0.6rem;
+    }
+    .songdesc{
+        width: 6.5rem;
+    }
+    .playbar1{
+        margin-top: 0.1rem;
+    }
+    .loginsignupdiva{
+        padding: 0.5rem 0rem;
+    }
+    .songdiv{
+        height: 98vh;
+    } */
+    .songtopdiv{
+        height: 6.1rem;
+    }
+    .sidediv{
+        left: -100%;
+        width: 100%;
+    }
+    
+}
