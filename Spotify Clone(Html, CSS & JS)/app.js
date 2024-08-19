@@ -2,7 +2,7 @@ let currentSong = new Audio();
 let albumName;
 console.log(currentSong)
 async function songfetch(albumName){
-    let song = await fetch("http://127.0.0.1:5500/songs/")
+    let song = await fetch("https://sohairateeq.github.io/spotify/Spotify%20Clone(Html%2C%20CSS%20%26%20JS)/songs/")
     let response = await song.text();
     let div = document.createElement("div");
     div.innerHTML = response;
